@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_cron_currency_rate" model="ir.cron">
+        <field name="name">SUNAT TC</field>
+        <field name="model_id" ref="sunat_exchage_rate.model_currency_rate_wizard" />
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="priority" eval="0"/>
+        <field name="state">code</field>
+        <field name="code">model.set_currency_rate_cron()</field>
+    </record>
+</odoo>

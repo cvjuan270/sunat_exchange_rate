@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="currency_rate_wizard" model="ir.ui.view">
+        <field name="name">Sunat - Tipo de cambio </field>
+        <field name="model">currency.rate.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                </group>
+                <footer>
+                    <div>
+                        <button string="Actualizar" name="set_currency_rate" type="object" />
+                        <button string="Cancelar" class="oe_link" special="cancel" />
+                    </div>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_currency_rate_wizard" model="ir.actions.act_window">
+        <field name="name">Sunat Tipo de cambio USD</field>
+        <field name="res_model">currency.rate.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="currency_rate_wizard" />
+        <field name="target">new</field>
+    </record>
+</odoo>

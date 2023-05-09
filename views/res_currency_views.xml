@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_currency_form">
+            <field name="name">sunat_exchange_rate.res.currency.form</field>
+            <field name="model">res.currency</field>
+            <field name="inherit_id" ref="base.view_currency_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="before">
+                    <header attrs="{'invisible':[('name','!=', 'USD')]}">
+                        <button name="open_related_window" class="oe_highlight" string="Actualizar TC SUNAT" type="object"/>
+                    </header>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
