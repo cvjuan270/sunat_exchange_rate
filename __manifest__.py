@@ -26,5 +26,6 @@
         'data/ir_cron.xml',
         'views/currency_rate_wizard.xml',
         'views/res_currency_views.xml',
+        'security/ir.model.access.csv'
     ],
 }
