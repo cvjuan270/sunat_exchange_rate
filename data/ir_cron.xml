@@ -2,7 +2,7 @@
 <odoo>
     <record id="ir_cron_currency_rate" model="ir.cron">
         <field name="name">SUNAT TC</field>
-        <field name="model_id" ref="sunat_exchage_rate.model_currency_rate_wizard" />
+        <field name="model_id" ref="sunat_exchange_rate.model_currency_rate_wizard" />
         <field name="interval_number">1</field>
         <field name="interval_type">days</field>
         <field name="numbercall">-1</field>
