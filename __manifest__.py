@@ -17,15 +17,15 @@
     # for the full list
     'category': 'Accounting',
     'version': '0.1',
-
+    'license': 'LGPL-3',
     # any module necessary for this one to work correctly
     'depends': ['base', 'iap'],
 
     # always loaded
     'data': [
-        'data/ir_cron.xml',
         'views/currency_rate_wizard.xml',
         'views/res_currency_views.xml',
-        'security/ir.model.access.csv'
+        'security/ir.model.access.csv',
+        'data/ir_cron.xml',
     ],
 }
